@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-luxury-white: #ffffff;
+  --color-luxury-offwhite: #fafafa;
+  --color-luxury-lightgray: #f4f4f5;
+  --color-luxury-dark: #0a0a0a;
+  --color-luxury-navy: #0f172a;
+  --color-luxury-gray: #64748b;
+  --color-luxury-amber: #f5a623;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-outfit: "Outfit", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-luxury-white);
+    --foreground: var(--color-luxury-dark);
+  }
+
+  .dark {
+    --background: var(--color-luxury-dark);
+    --foreground: var(--color-luxury-white);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-outfit);
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .btn-amber {
+    @apply bg-[var(--color-luxury-amber)] text-white font-medium hover:opacity-90 transition-all duration-300;
+  }
+
+  .btn-dark {
+    @apply bg-[var(--color-luxury-dark)] text-white font-medium hover:opacity-90 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 text-[var(--color-luxury-dark)] font-medium hover:border-gray-800 transition-all duration-300;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white shadow-xl;
+  }
+
+  .text-glow-amber {
+    text-shadow: 0 0 15px rgba(245, 166, 35, 0.4);
+  }
+}
+
+/* Custom scrollbar for luxury theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-luxury-offwhite);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-luxury-gray);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-dark);
 }
