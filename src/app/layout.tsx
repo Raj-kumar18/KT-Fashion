@@ -19,6 +19,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "KTFashion | The Silhouette of Excellence",
   description: "Mastering the architecture of the modern uniform. Bespoke heritage tailoring and avant-garde performance textiles.",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
