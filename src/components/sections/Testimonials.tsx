@@ -71,7 +71,7 @@ export function Testimonials() {
               {/* Replace placeholder with the executive portrait from images */}
               <div className="absolute inset-0">
                 <Image
-                  src="/images/owner.png"
+                  src="/images/owner.webp"
                   alt="Executive Testimonial"
                   fill
                   className="object-cover"
