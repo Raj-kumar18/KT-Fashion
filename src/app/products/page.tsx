@@ -12,19 +12,20 @@ const CATEGORIES = [
   "Corporate",
   "Hospital",
   "Hotels",
+  "Bedsheets"
 ];
 
 const PRODUCTS = [
   // SCHOOL (9 Items)
-  { id: 1, category: "School", image: "/images/products/school-1.png" },
-  { id: 2, category: "School", image: "/images/products/school-2.png" },
-  { id: 3, category: "School", image: "/images/products/school-3.png" },
-  { id: 4, category: "School", image: "/images/products/school-4.png" },
-  { id: 5, category: "School", image: "/images/products/school-5.png" },
-  { id: 6, category: "School", image: "/images/products/school-6.png" },
-  { id: 7, category: "School", image: "/images/products/school-7.png" },
-  { id: 8, category: "School", image: "/images/products/school-8.png" },
-  { id: 9, category: "School", image: "/images/products/school-9.png" },
+  { id: 1, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795354/school-7_xz29om.jpg"},
+  { id: 2, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795333/school-9_t1dm16.jpg" },
+  { id: 3, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795326/school-8_oaqk2b.jpg" },
+  { id: 4, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795326/school-8_oaqk2b.jpg" },
+  { id: 5, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795315/school-6_nxvtdo.jpg" },
+  { id: 6, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795302/school-3_tkhih8.jpg" },
+  { id: 7, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795301/school-5_c6yifq.jpg" },
+  { id: 8, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795292/school-4_gv4xmw.jpg" },
+  { id: 9, category: "School", image: "https://res.cloudinary.com/odabnxiq/image/upload/v1784795281/school-2_q27psq.jpg" },
 
   // COLLEGES (9 Items)
   { id: 10, category: "Colleges", image: "/images/products/college-1.png" },
