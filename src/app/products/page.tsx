@@ -12,7 +12,7 @@ const CATEGORIES = [
   "Corporate",
   "Hospital",
   "Hotels",
-  "Bedsheets"
+  "Bedsheet",
 ];
 
 const PRODUCTS = [
